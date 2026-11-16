@@ -1,0 +1,47 @@
+#root,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: #1a1a19;
+}
+
+#root,
+arcgis-map {
+  width: 100%;
+}
+
+calcite-shell-panel {
+  --calcite-shell-panel-width: 440px;
+  --calcite-shell-panel-min-width: 340px;
+  --calcite-shell-panel-max-width: 700px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  background: #1a1a19;
+  border-bottom: 1px solid #383835;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  color: #f0efec;
+}
+.app-header .title { font-size: 18px; font-weight: 700; }
+.app-header .replay { --calcite-chip-background-color: #fab219; --calcite-chip-text-color: #1a1a19; font-weight: 700; }
+.app-header .clock-label { font-size: 12px; color: #c3c2b7; margin-left: 6px; }
+.app-header .clock { font-size: 14px; font-weight: 700; color: #fab219; }
+.app-header .sub { font-size: 12px; color: #8f8e86; }
+
+.gate {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
